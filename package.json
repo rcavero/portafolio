@@ -1,0 +1,23 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcavero/portafolio.git"
+  },
+  "author": "Ramón Cavero Aras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcavero/portafolio/issues"
+  },
+  "homepage": "https://github.com/rcavero/portafolio#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2",
+    "normalize.css": "^8.0.1"
+  }
+}

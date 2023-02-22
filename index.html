@@ -6,9 +6,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Ramón Cavero Aras | Portafolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal-plain.min.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -24,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css" />
     <script src="assets\js\main.js" defer></script>
     <script src="assets\js\fixed.js" defer></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal-plain.min.js" defer></script>
+
 
 </head>
 
@@ -113,7 +118,8 @@
             <h3>Experience</h3>
             <hr />
             <div>
-                <a>
+                <!-- Añadimos la clase que nos pide la librería del modal -->
+                <a data-modal-id="myModal">
                     <img src="assets/img/experience/4geeks.svg" />
                     <h4>4Geeks Academy</h4>
                 </a>
@@ -162,6 +168,17 @@
     <footer>
         <small>Developed and designed by Ramón Cavero Aras. ©2023. All rights reserved.</small>
     </footer>
+    <!-- Here we are adding the modal from the library -->
+    <!-- Modal -->
+    <div id="myModal" class="eins-modal">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+    
+            Esta es mi primera experiencia como Software Developer
+    
+            <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>
 </body>
 
 </html>
